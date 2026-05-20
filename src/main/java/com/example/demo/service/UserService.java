@@ -26,6 +26,10 @@ public class UserService {
         .orElseThrow(() -> new RuntimeException("User not found"));
     }
 
+    public User[] getAllUsers() {
+        return userRepository.findAll().toArray(new User[0]);
+    }
+
     public User getCurrentUser() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication == null || !authentication.isAuthenticated()) {

@@ -43,4 +43,10 @@ public class UserController {
         userService.deleteUser();
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/all")
+    public ResponseEntity<User[]> getAllUsers() {
+        User[] users = userService.getAllUsers();
+        return ResponseEntity.ok(users);
+    }
 }
