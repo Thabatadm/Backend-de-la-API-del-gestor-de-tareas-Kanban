@@ -57,12 +57,11 @@ public class CardService {
         Card card = cardRepository.findById(cardId)
                 .orElseThrow(() -> new RuntimeException("Card not found"));
 
-        // Solo actualizamos si el campo viene en el JSON
         if (dto.getTitle() != null) card.setTitle(dto.getTitle());
         if (dto.getDescription() != null) card.setDescription(dto.getDescription());
         if (dto.getStatus() != null) card.setStatus(dto.getStatus());
         if (dto.getPriority() != null) card.setPriority(dto.getPriority());
-
+        if (dto.getDueDate() != null) card.setDueDate(dto.getDueDate());
 
         if (dto.getAssigneeId() != null) {
             User user = userRepository.findById(dto.getAssigneeId()).orElse(null);
