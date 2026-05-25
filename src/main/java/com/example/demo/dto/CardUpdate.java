@@ -12,4 +12,5 @@ public class CardUpdate {
     private Priority priority;
     private Long assigneeId;
     private java.time.LocalDateTime dueDate;
+    private Integer position;
 }

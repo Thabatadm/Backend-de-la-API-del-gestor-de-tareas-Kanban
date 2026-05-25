@@ -62,6 +62,9 @@ public class CardService {
         if (dto.getStatus() != null) card.setStatus(dto.getStatus());
         if (dto.getPriority() != null) card.setPriority(dto.getPriority());
         if (dto.getDueDate() != null) card.setDueDate(dto.getDueDate());
+        if (dto.getPosition() != null) {
+        card.setPosition(dto.getPosition());
+        }
 
         if (dto.getAssigneeId() != null) {
             User user = userRepository.findById(dto.getAssigneeId()).orElse(null);
