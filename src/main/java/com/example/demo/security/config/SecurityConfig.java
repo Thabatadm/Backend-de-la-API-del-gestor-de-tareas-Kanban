@@ -35,7 +35,7 @@ public class SecurityConfig {
         http
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration config = new CorsConfiguration();
-                    config.setAllowedOrigins(List.of("http://localhost:8080","http://localhost:5173", "https://backend-de-la-api-del-gestor-de-tareas.onrender.com"));
+                    config.setAllowedOrigins(List.of("http://localhost:8080","http://localhost:5173", "https://backend-de-la-api-del-gestor-de-tareas.onrender.com", "https://kanban-task-manager-frontend.vercel.app"));
                     config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     config.setAllowedHeaders(List.of("*"));
                     config.setAllowCredentials(true);
