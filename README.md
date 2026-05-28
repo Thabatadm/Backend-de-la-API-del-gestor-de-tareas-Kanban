@@ -14,6 +14,10 @@ You can interact with the API and test all endpoints directly from your browser:
 > ⚠️ Since this project is hosted on Render's free tier, the first request may take between **30–50 seconds** while the server wakes up.
 
 ---
+Companion Frontend Client Repository:
+> 👉 [Frontend Client (React + TypeScript)](https://github.com/Thabatadm/kanban-task-manager-frontend)
+
+---
 
 # 🛠️ Tech Stack
 
