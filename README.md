@@ -78,10 +78,10 @@ POST /auth/register
 
 ```json
 {
-  "name": "Patricia",
-  "lastName": "Gomez",
-  "email": "patricia@example.com",
-  "password": "password123"
+  "name": "string",
+  "lastName": "string",
+  "email": "string@example.com",
+  "password": "string"
 }
 ```
 
@@ -95,10 +95,10 @@ POST /auth/register
 
 ```json
 {
-  "name": "Pedro",
-  "lastName": "Martinez",
-  "email": "pedro@example.com",
-  "password": "password123"
+  "name": "string",
+  "lastName": "string",
+  "email": "string@example.com",
+  "password": "string"
 }
 ```
 
@@ -116,8 +116,8 @@ POST /auth/login
 
 ```json
 {
-  "email": "patricia@example.com",
-  "password": "password123"
+  "email": "string@example.com",
+  "password": "string"
 }
 ```
 
@@ -161,7 +161,7 @@ POST /api/projects/{projectId}/members
 
 ```json
 {
-  "userId": 2,
+  "userId": number,
   "role": "DEVELOPER"
 }
 ```
