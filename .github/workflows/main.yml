@@ -12,7 +12,7 @@ jobs:
       - name: Sending signal to Backend and Database
         run: |
           URL="https://backend-de-la-api-del-gestor-de-tareas.onrender.com/api/public/keep-alive"
-          status_code=$(curl -s -o /dev/null -w "%{http_code}" $URL)
+          status_code=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
           
           echo "Status: $status_code"
           
